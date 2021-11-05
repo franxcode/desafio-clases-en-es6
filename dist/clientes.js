@@ -32,7 +32,7 @@ var Clientes = /*#__PURE__*/function () {
     value: function calcularImpuesto() {
       var valor = (this._impuesto.monto_bruto_anual - this._impuesto.deducciones) * 0.21;
       return {
-        texto: "El impuesto total a pagar es: $".concat(valor),
+        texto: "El impuesto total a pagar por el cliente ".concat(this._nombre, " es: $").concat(valor),
         valor: valor
       };
     }

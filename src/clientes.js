@@ -12,7 +12,7 @@ class Clientes {
 	calcularImpuesto() {
 		const valor = (this._impuesto.monto_bruto_anual - this._impuesto.deducciones) * 0.21;
 		return {
-			texto: `El impuesto total a pagar es: $${valor}`,
+			texto: `El impuesto total a pagar por el cliente ${this._nombre} es: $${valor}`,
 			valor: valor,
 		};
 	}
